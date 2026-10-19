@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JPMAFJ — Your Private Wealth & Investment Journal</title>
+<meta name="description" content="JPMAFJ is a private, offline wealth and investment journal. Track accounts, transactions, portfolios, budgets, and goals on your own device — no account, no cloud, no tracking." />
+<style>
+  :root {
+    --bg: #0e1116;
+    --surface: #161b22;
+    --surface-2: #1c222b;
+    --border: #2a3140;
+    --text: #e6edf3;
+    --muted: #9aa4b2;
+    --accent: #d4a25a;
+    --accent-soft: #f1d9a8;
+    --link: #8fb1ff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", sans-serif; line-height: 1.65; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header { border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #11161e 0%, #0e1116 100%); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 32px 24px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+  .logo { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, var(--accent), var(--accent-soft)); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #1a130a; font-size: 18px; }
+  h1 { margin: 0; font-size: 30px; letter-spacing: -0.01em; }
+  .subtitle { color: var(--muted); margin: 6px 0 0; font-size: 16px; }
+  h2 { font-size: 22px; margin-top: 36px; margin-bottom: 10px; border-left: 3px solid var(--accent); padding-left: 10px; }
+  h3 { font-size: 17px; margin-top: 22px; margin-bottom: 6px; color: var(--accent-soft); }
+  p { margin: 10px 0; color: #d4dae3; }
+  ul { color: #d4dae3; padding-left: 22px; }
+  li { margin: 6px 0; }
+  .pill { display: inline-block; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; font-size: 12px; color: var(--muted); margin-right: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0 4px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .card h4 { margin: 0 0 6px; font-size: 15px; color: var(--accent-soft); }
+  .card p { margin: 0; font-size: 14px; color: #c8cfd9; }
+  footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 24px 0; color: var(--muted); font-size: 13px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  .lang { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">FJ</div>
+      <div>
+        <h1>JPMAFJ</h1>
+        <div class="subtitle">Your Private Wealth & Investment Journal</div>
+      </div>
+    </div>
+    <div>
+      <span class="pill">iOS</span>
+      <span class="pill">Offline</span>
+      <span class="pill">No Account</span>
+      <span class="pill">No Tracking</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Overview</h2>
+    <p>
+      JPMAFJ is a personal wealth journal designed for investors, savers, and planners who want a calm,
+      focused place to think about money — without giving up their data, their privacy, or their attention to
+      advertising and brokerage upsells. It helps you record, organize, and analyze every part of your
+      financial life entirely on your own device.
+    </p>
+  </section>
+
+  <section>
+    <h2>What You Can Do</h2>
+    <div class="grid">
+      <div class="card"><h4>Multi-Account Journal</h4><p>Track checking, savings, credit, cash, and investment accounts side by side with multi-currency support.</p></div>
+      <div class="card"><h4>Transactions & Receipts</h4><p>Log every transaction with payee, category, tag, memo, and an attached receipt photo from camera or library.</p></div>
+      <div class="card"><h4>Portfolio & Lots</h4><p>Record individual lots for each holding and compute true average cost, cost basis, and unrealized P/L.</p></div>
+      <div class="card"><h4>Budgets</h4><p>Set monthly or custom periods, scoped to a category or full spend, with progress filled in as transactions land.</p></div>
+      <div class="card"><h4>Goals</h4><p>Plan toward a down payment, emergency fund, or your next adventure, with contribution tracking and progress rings.</p></div>
+      <div class="card"><h4>Dashboard & Reports</h4><p>Net-worth trend, scrubbable cash-flow bars, allocation donut, sparklines, and selectable time-range reports.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy at a Glance</h2>
+    <ul>
+      <li>Everything is stored locally on your device.</li>
+      <li>No account, no server, no cloud sync, no third-party analytics.</li>
+      <li>Export a JSON backup snapshot, restore demo data, or wipe everything at any time.</li>
+      <li>See the full <a href="privacy.html">Privacy Policy</a> for details.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tracking Declaration</h2>
+    <p>
+      JPMAFJ does <strong>not</strong> collect, transmit, sell, or share any personal or financial data.
+      The app contains no advertising SDKs, no analytics SDKs, no tracking pixels, no fingerprinting
+      libraries, no crash-reporting services, and no remote logging. The app makes no network calls related
+      to your data. All identifiers, instruments, transactions, and receipts stay on the device you use.
+    </p>
+    <p>
+      The only information that ever leaves your device is what you explicitly choose to send us — for
+      example, an email you write to <a href="mailto:datltan1991@icloud.com">datltan1991@icloud.com</a>
+      when you contact support.
+    </p>
+  </section>
+
+  <section>
+    <h2>Disclaimer</h2>
+    <p>
+      Charts, ratios, and signals shown in JPMAFJ are educational and informational only and do not
+      constitute investment, tax, or legal advice. Past performance does not guarantee future results.
+    </p>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>
+      Questions, feedback, or a data request? Reach us at
+      <a href="mailto:datltan1991@icloud.com">datltan1991@icloud.com</a>. Full support details are on the
+      <a href="support.html">Support</a> page.
+    </p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:datltan1991@icloud.com">Contact</a>
+    </div>
+    <div>© 2026 JPMAFJ. All rights reserved.</div>
+    <div class="lang">English</div>
+  </footer>
+</main>
+</body>
+</html>
